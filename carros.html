@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Nova Capital</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="images/NC.jpg"/>
+</head>
+
+<body>
+
+<header class="banner-topo">
+    <img src="images/capitalbaner.png" alt="Banner da Loja" class="banner-img" onerror="this.src='https://placehold.co/1400x350/141419/ffffff?text=Coloque+Seu+Banner+Aqui'">
+</header>
+
+<div class="main-container">
+    
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="modificacoes.html"><span class="icon">🚧</span> MODIFICAÇÕES</a></li>
+                <li class="active"><a href="carros.html"><span class="icon">🚗</span> CARROS</a></li>
+                <li><a href="motos.html"><span class="icon">🏍️</span> MOTOS</a></li>
+                <li><a href="index.html"><span class="icon">🚁</span> HELICÓPTEROS</a></li>
+                <li><a href="blindado.html"><span class="icon">🛡️</span> BLIDADOS</a></li>
+                <li><a href="vips.html"><span class="icon">💎</span> VIPS</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content-area">
+        <div class="grid">
+            <!-- P1 -->
+            <div class="card" onclick="openModal(1)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+1'" src="images/McLaren Senna.png"/>
+                <h3>McLaren Senna</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+            
+            <!-- P2 -->
+            <div class="card" onclick="openModal(2)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+2'" src="images/BMW i8..png"/>
+                <h3>BMW i8</h3>
+                <div class="price-container">
+                    <span class="price-old">R$ 35,00</span>
+                    <span class="price-green">R$ 25,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+            
+            <!-- P3 -->
+            <div class="card" onclick="openModal(3)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Mansao'" src="images/Lamborghini Huracán.png"/>
+                <h3>Lamborghini Huracán</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P4 -->
+            <div class="card" onclick="openModal(4)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+4'" src="images/Ferrari 458.png"/>
+                <h3>Ferrari 458</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P5 -->
+            <div class="card" onclick="openModal(5)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+5'" src="images/Porsche_911.png"/>
+                <h3>Porsche 911</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 20,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P6 -->
+            <div class="card" onclick="openModal(6)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+6'" src="images/Mercedes-AMG GT63 S.png"/>
+                <h3>Mercedes-AMG GT63</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P7 -->
+            <div class="card" onclick="openModal(7)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+7'" src="images/BMW X6.png"/>
+                <h3>BMW X6</h3>
+                <div class="price-container">
+                    <span class="price-old">R$ 35,00</span>
+                    <span class="price-green">R$ 25,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P8 -->
+            <div class="card" onclick="openModal(8)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+8'" src="images/Lamborghini Huracán Spyder.png"/>
+                <h3>Lamborghini Huracán Spyder</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 20,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P9 -->
+            <div class="card" onclick="openModal(9)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+9'" src="images/Nissan GT-R.png"/>
+                <h3>Nissan GT-R</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P10 -->
+            <div class="card" onclick="openModal(10)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+10'" src="images/Lamborghini Huracán n.png"/>
+                <h3>Lamborghini Huracán</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 25,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P11 -->
+            <div class="card" onclick="openModal(11)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+11'" src="images/Bugatti Chiron.png"/>
+                <h3>Bugatti Chiron</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P12 -->
+            <div class="card" onclick="openModal(12)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+12'" src="images/Mercedes AMG GT R.png"/>
+                <h3>Mercedes AMG GT R</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P13 -->
+            <div class="card" onclick="openModal(13)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+13'" src="images/Audi RS6.png"/>
+                <h3>Audi RS6</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 25,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P14 -->
+            <div class="card" onclick="openModal(14)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+14'" src="images/Audi R8.png"/>
+                <h3>Audi R8</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 25,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P15 -->
+            <div class="card" onclick="openModal(15)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+15'" src="images/BMW 7.png"/>
+                <h3>BMW 7</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P16 -->
+            <div class="card" onclick="openModal(16)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+16'" src="images/Lamborghini Urus.png"/>
+                <h3>Lamborghini Urus</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <!-- P17 -->
+            <div class="card" onclick="openModal(17)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+17'" src="images/Ferrari Purosangue.png"/>
+                <h3>Ferrari Purosangue</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 35,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- ================= MODAIS DETALHADOS ================= -->
+
+<div class="modal" id="m1">
+    <div class="box">
+        <span class="close" onclick="closeModal(1)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+1'" src="images/McLaren Senna.png"/>
+        <div>
+            <h2>McLaren Senna</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo McLaren Senna</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m2">
+    <div class="box">
+        <span class="close" onclick="closeModal(2)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+2'" src="images/BMW i8..png"/>
+        <div>
+            <h2>BMW i8</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo BMW i8</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-old">R$ 35,00</span>
+                <span class="price-green">R$ 25,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m3">
+    <div class="box">
+        <span class="close" onclick="closeModal(3)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Mansao'" src="images/Lamborghini Huracán.png"/>
+        <div>
+            <h2>Lamborghini Huracán</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Lamborghini Huracán</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m4">
+    <div class="box">
+        <span class="close" onclick="closeModal(4)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+4'" src="images/Ferrari 458.png"/>
+        <div>
+            <h2>Ferrari 458</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Ferrari 458</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m5">
+    <div class="box">
+        <span class="close" onclick="closeModal(5)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+5'" src="images/Porsche_911.png"/>
+        <div>
+            <h2>Porsche 911</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Porsche 911</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 20,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m6">
+    <div class="box">
+        <span class="close" onclick="closeModal(6)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+6'" src="images/Mercedes-AMG GT63 S.png"/>
+        <div>
+            <h2>Mercedes-AMG GT63</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Mercedes-AMG GT63</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m7">
+    <div class="box">
+        <span class="close" onclick="closeModal(7)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+7'" src="images/BMW X6.png"/>
+        <div>
+            <h2>BMW X6</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo BMW X6</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-old">R$ 35,00</span>
+                <span class="price-green">R$ 25,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m8">
+    <div class="box">
+        <span class="close" onclick="closeModal(8)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+8'" src="images/Lamborghini Huracán Spyder.png"/>
+        <div>
+            <h2>Lamborghini Huracán Spyder</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Lamborghini Huracán Spyder</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 20,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m9">
+    <div class="box">
+        <span class="close" onclick="closeModal(9)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+9'" src="images/Nissan GT-R.png"/>
+        <div>
+            <h2>Nissan GT-R</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Nissan GT-R</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m10">
+    <div class="box">
+        <span class="close" onclick="closeModal(10)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+10'" src="images/Lamborghini Huracán n.png"/>
+        <div>
+            <h2>Lamborghini Huracán</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Lamborghini Huracán </li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 25,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m11">
+    <div class="box">
+        <span class="close" onclick="closeModal(11)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+11'" src="images/Bugatti Chiron.png"/>
+        <div>
+            <h2>Bugatti Chiron</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Bugatti Chiron</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m12">
+    <div class="box">
+        <span class="close" onclick="closeModal(12)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+12'" src="images/Mercedes AMG GT R.png"/>
+        <div>
+            <h2>Mercedes AMG GT R</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Mercedes AMG GT R</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m13">
+    <div class="box">
+        <span class="close" onclick="closeModal(13)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+13'" src="images/Audi RS6.png"/>
+        <div>
+            <h2>Audi RS6</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Audi RS6</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 25,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m14">
+    <div class="box">
+        <span class="close" onclick="closeModal(14)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+14'" src="images/Audi R8.png"/>
+        <div>
+            <h2>Audi R8</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Audi R8</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 25,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m15">
+    <div class="box">
+        <span class="close" onclick="closeModal(15)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+15'" src="images/BMW 7.png"/>
+        <div>
+            <h2>BMW 7</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo BMW 7</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m16">
+    <div class="box">
+        <span class="close" onclick="closeModal(16)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+16'" src="images/Lamborghini Urus.png"/>
+        <div>
+            <h2>Lamborghini Urus</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Lamborghini Urus</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m17">
+    <div class="box">
+        <span class="close" onclick="closeModal(17)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+17'" src="images/Ferrari Purosangue.png"/>
+        <div>
+            <h2>Ferrari Purosangue</h2>
+            <p>Tenha acesso a um veículo de Luxo</p>
+            <p><strong>Benefícios do veículo:</strong></p>
+            <ul class="modal-list">
+                <li>🚗 Veiculo Ferrari Purosangue</li>
+                <li>➝ Duração: Até o wipe</li>
+            </ul>
+            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 35,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

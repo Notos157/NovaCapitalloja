@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja - Nova Capital</title>
     <link href="style.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="images/NC.jpg"/>
 </head>
 <body>
 
@@ -17,13 +18,12 @@
     <aside class="sidebar">
         <nav>
             <ul>
-                <li><a href="https://novacapitalloja.vercel.app/"><span class="icon">🚧</span> MODIFICAÇÕES</a></li>
-                <li><a href="https://novacapitallojacarros.vercel.app/"><span class="icon">🚗</span> CARROS</a></li>
-                <li class="active"><a href="https://novacapitallojamotos.vercel.app/"><span class="icon">🏍️</span> MOTOS</a></li>
-                <li><a href="#"><span class="icon">🚁</span> HELICÓPTEROS</a></li>
-                <li><a href="#"><span class="icon">⭐</span> NOVIDADES</a></li>
-                <li><a href="#"><span class="icon">💸</span> PROMOÇÕES</a></li>
-                <li><a href="#"><span class="icon">💎</span> VIPS</a></li>
+                <li><a href="modificacoes.html"><span class="icon">🚧</span> MODIFICAÇÕES</a></li>
+                <li><a href="carros.html"><span class="icon">🚗</span> CARROS</a></li>
+                <li><a href="motos.html"><span class="icon">🏍️</span> MOTOS</a></li>
+                <li class="active"><a href="index.html"><span class="icon">🚁</span> HELICÓPTEROS</a></li>
+                <li><a href="blindado.html"><span class="icon">🛡️</span> BLIDADOS</a></li>
+                <li><a href="vips.html"><span class="icon">💎</span> VIPS</a></li>
             </ul>
         </nav>
     </aside>
@@ -32,8 +32,8 @@
         <div class="grid">
             <!-- P1 -->
             <div class="card" onclick="openModal(1)">
-                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+1'" src="images/Can-Am Outlander 1000R XT.png"/>
-                <h3>Can-Am Outlander 1000R XT</h3>
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+1'" src="images/Vigilante H125.png"/>
+                <h3>Vigilante H125</h3>
                 <div class="price-container">
                     <span class="price-green">R$ 35,00</span>
                 </div>
@@ -42,8 +42,8 @@
             
             <!-- P2 -->
             <div class="card" onclick="openModal(2)">
-                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+2'" src="images/BMW R1250GS.png"/>
-                <h3>BMW R1250GS</h3>
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+2'" src="images/Flying Bravo.png"/>
+                <h3>Flying Bravo</h3>
                 <div class="price-container">
                     <span class="price-green">R$ 35,00</span>
                 </div>
@@ -52,8 +52,8 @@
             
             <!-- P3 -->
             <div class="card" onclick="openModal(3)">
-                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Mansao'" src="images/BMW R1250GS 2.png"/>
-                <h3>BMW R1250GS</h3>
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Mansao'" src="images/Luxo H20.png"/>
+                <h3>Luxo H20</h3>
                 <div class="price-container">
                     <span class="price-green">R$ 35,00</span>
                 </div>
@@ -62,48 +62,8 @@
 
             <!-- P4 -->
             <div class="card" onclick="openModal(4)">
-                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+4'" src="images/BMW R1250 GS.png"/>
-                <h3>BMW R1250 GS</h3>
-                <div class="price-container">
-                    <span class="price-green">R$ 35,00</span>
-                </div>
-                <button class="add-to-cart-btn">COMPRAR AGORA</button>
-            </div>
-
-            <!-- P5 -->
-            <div class="card" onclick="openModal(5)">
-                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+5'" src="images/BMW R1250RT.png"/>
-                <h3>BMW R1250RT</h3>
-                <div class="price-container">
-                    <span class="price-green">R$ 35,00</span>
-                </div>
-                <button class="add-to-cart-btn">COMPRAR AGORA</button>
-            </div>
-
-            <!-- P6 -->
-            <div class="card" onclick="openModal(6)">
-                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+6'" src="images/BMW S1000RR.png"/>
-                <h3>BMW S1000RR</h3>
-                <div class="price-container">
-                    <span class="price-green">R$ 35,00</span>
-                </div>
-                <button class="add-to-cart-btn">COMPRAR AGORA</button>
-            </div>
-
-            <!-- P7 -->
-            <div class="card" onclick="openModal(7)">
-                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+7'" src="images/Tiger 900.png"/>
-                <h3>Triumph Tiger 900</h3>
-                <div class="price-container">
-                    <span class="price-green">R$ 35,00</span>
-                </div>
-                <button class="add-to-cart-btn">COMPRAR AGORA</button>
-            </div>
-
-            <!-- P8 -->
-            <div class="card" onclick="openModal(8)">
-                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+8'" src="images/Triumph Tiger 900.png"/>
-                <h3>Triumph Tiger 900 Explorer</h3>
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+4'" src="images/Luxo H125.png"/>
+                <h3>Luxo H125</h3>
                 <div class="price-container">
                     <span class="price-green">R$ 35,00</span>
                 </div>
@@ -113,19 +73,17 @@
     </main>
 </div>
 
-<!-- ================= MODAIS DETALHADOS ================= -->
-
 <!-- M1 -->
 <div class="modal" id="m1">
     <div class="box">
         <span class="close" onclick="closeModal(1)">×</span>
-        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+1'" src="images/Can-Am Outlander 1000R XT.png"/>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+1'" src="images/Vigilante H125.png"/>
         <div>
-            <h2>Can-Am Outlander 1000R XT</h2>
+            <h2>Vigilante H125</h2>
             <p>Tenha acesso a um veículo de Luxo</p>
             <p><strong>Benefícios do veículo:</strong></p>
             <ul class="modal-list">
-                <li>🏍️ Veiculo Can-Am Outlander 1000R XT</li>
+                <li>🚁 Veiculo Vigilante H125</li>
                 <li>➝ Duração: Até o wipe</li>
             </ul>
             <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
@@ -141,13 +99,13 @@
 <div class="modal" id="m2">
     <div class="box">
         <span class="close" onclick="closeModal(2)">×</span>
-        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+2'" src="images/BMW R1250GS.png"/>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+2'" src="images/Flying Bravo.png"/>
         <div>
-            <h2>BMW R1250GS</h2>
+            <h2>Flying Bravo</h2>
             <p>Tenha acesso a um veículo de Luxo</p>
             <p><strong>Benefícios do veículo:</strong></p>
             <ul class="modal-list">
-                <li>🏍️ Veiculo BMW R1250GS </li>
+                <li>🚁 Veiculo Flying Bravo</li>
                 <li>➝ Duração: Até o wipe</li>
             </ul>
             <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
@@ -163,13 +121,13 @@
 <div class="modal" id="m3">
     <div class="box">
         <span class="close" onclick="closeModal(3)">×</span>
-        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Mansao'" src="images/BMW R1250GS 2.png"/>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Mansao'" src="images/Luxo H20.png"/>
         <div>
-            <h2>BMW R1250GS</h2>
+            <h2>Luxo H20</h2>
             <p>Tenha acesso a um veículo de Luxo</p>
             <p><strong>Benefícios do veículo:</strong></p>
             <ul class="modal-list">
-                <li>🏍️ Veiculo BMW R1250GS </li>
+                <li>🚁 Veiculo Luxo H20</li>
                 <li>➝ Duração: Até o wipe</li>
             </ul>
             <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
@@ -185,102 +143,13 @@
 <div class="modal" id="m4">
     <div class="box">
         <span class="close" onclick="closeModal(4)">×</span>
-        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+4'" src="images/BMW R1250 GS.png"/>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+4'" src="images/Luxo H125.png"/>
         <div>
-            <h2>BMW R1250 GS</h2>
+            <h2>Luxo H125</h2>
             <p>Tenha acesso a um veículo de Luxo</p>
             <p><strong>Benefícios do veículo:</strong></p>
             <ul class="modal-list">
-                <li>🏍️ Veiculo BMW R1250 GS</li>
-                <li>➝ Duração: Até o wipe</li>
-            </ul>
-            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
-            <div class="price-container">
-                <span class="price-green">R$ 35,00</span>
-            </div>
-            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
-        </div>
-    </div>
-</div>
-
-<!-- M5 -->
-<div class="modal" id="m5">
-    <div class="box">
-        <span class="close" onclick="closeModal(5)">×</span>
-        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+5'" src="images/BMW R1250RT.png"/>
-        <div>
-            <h2>BMW R1250RT</h2>
-            <p>Tenha acesso a um veículo de Luxo</p>
-            <p><strong>Benefícios do veículo:</strong></p>
-            <ul class="modal-list">
-                <li>🏍️ Veiculo BMW R1250RT </li>
-                <li>➝ Duração: Até o wipe</li>
-            </ul>
-            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
-            <div class="price-container">
-                <span class="price-green">R$ 35,00</span>
-            </div>
-            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
-        </div>
-    </div>
-</div>
-
-<!-- M6 -->
-<div class="modal" id="m6">
-    <div class="box">
-        <span class="close" onclick="closeModal(6)">×</span>
-        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+6'" src="images/BMW S1000RR.png"/>
-        <div>
-            <h2>BMW S1000RR</h2>
-            <p>Tenha acesso a um veículo de Luxo</p>
-            <p><strong>Benefícios do veículo:</strong></p>
-            <ul class="modal-list">
-                <li>🏍️ Veiculo BMW S1000RR</li>
-                <li>➝ Duração: Até o wipe</li>
-            </ul>
-            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
-            <div class="price-container">
-                <span class="price-green">R$ 35,00</span>
-            </div>
-            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
-        </div>
-    </div>
-</div>
-
-<!-- M7 -->
-<div class="modal" id="m7">
-    <div class="box">
-        <span class="close" onclick="closeModal(7)">×</span>
-        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+7'" src="images/Tiger 900.png"/>
-        <div>
-            <h2>Tiger 900</h2>
-            <p>Tenha acesso a um veículo de Luxo</p>
-            <p><strong>Benefícios do veículo:</strong></p>
-            <ul class="modal-list">
-                <li>🏍️ Veiculo Tiger 900 </li>
-                <li>➝ Duração: Até o wipe</li>
-            </ul>
-            <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>
-            <div class="price-container">
-
-                <span class="price-green">R$ 35,00</span>
-            </div>
-            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
-        </div>
-    </div>
-</div>
-
-<!-- M8 -->
-<div class="modal" id="m8">
-    <div class="box">
-        <span class="close" onclick="closeModal(8)">×</span>
-        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+8'" src="images/Triumph Tiger 900.png"/>
-        <div>
-            <h2>Triumph Tiger 900 Explorer</h2>
-            <p>Tenha acesso a um veículo de Luxo</p>
-            <p><strong>Benefícios do veículo:</strong></p>
-            <ul class="modal-list">
-                <li>🏍️ Veiculo Triumph Tiger 900 Explorer</li>
+                <li>🚁 Veiculo Luxo H125</li>
                 <li>➝ Duração: Até o wipe</li>
             </ul>
             <p><strong>Quaisquer dúvidas ou problemas abra um ticket vip e entre em contato com o nosso suporte vendas (Se você estiver no discord <button onclick="window.open('https://discord.com/channels/1463693154367701257/1526280380561362966', '_blank')">clique aqui</button>).</strong></p>

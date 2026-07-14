@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Nova Capital</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="images/NC.jpg"/>
+</head>
+<body>
+
+<header class="banner-topo">
+    <img src="images/capitalbaner.png" alt="Banner da Loja" class="banner-img" onerror="this.src='https://placehold.co/1400x350/141419/ffffff?text=Coloque+Seu+Banner+Aqui'">
+</header>
+
+<div class="main-container">
+    
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li class="active"><a href="modificacoes.html"><span class="icon">🚧</span> MODIFICAÇÕES</a></li>
+                <li><a href="carros.html"><span class="icon">🚗</span> CARROS</a></li>
+                <li><a href="motos.html"><span class="icon">🏍️</span> MOTOS</a></li>
+                <li><a href="index.html"><span class="icon">🚁</span> HELICÓPTEROS</a></li>               
+                <li><a href="blindado.html"><span class="icon">🛡️</span> BLIDADOS</a></li>
+                <li><a href="vips.html"><span class="icon">💎</span> VIPS</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content-area">
+        <div class="grid">
+            <div class="card" onclick="openModal(1)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+1'" src="images/"/>
+                <h3>Sistema de Trancas</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 5,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+            
+            <div class="card" onclick="openModal(2)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+2'" src="images/"/>
+                <h3>Sistema de Câmeras</h3>
+                <div class="price-container">
+                    <span class="price-old">R$ 25,00</span>
+                    <span class="price-green">R$ 15,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+            
+            <div class="card" onclick="openModal(3)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Mansao'" src="images/"/>
+                <h3>Mansão Exclusiva</h3>
+                <div class="price-container">
+                    <span class="price-old">R$ 450,00</span>
+                    <span class="price-green">R$ 150,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <div class="card" onclick="openModal(4)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+4'" src="images/"/>
+                <h3>Blip de Garagem</h3>
+                <div class="price-container">
+                    <span class="price-old">R$ 15,00</span>
+                    <span class="price-green">R$ 8,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <div class="card" onclick="openModal(5)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+5'" src="images/"/>
+                <h3>Blip de Helicópteros</h3>
+                <div class="price-container">
+                    <span class="price-old">R$ 20,00</span>
+                    <span class="price-green">R$ 10,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <div class="card" onclick="openModal(6)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+6'" src="images/"/>
+                <h3>Sistema de Cofre</h3>
+                <div class="price-container">
+                    <span class="price-green">R$ 15,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <div class="card" onclick="openModal(7)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+7'" src="images/"/>
+                <h3>Blip de Barbearia</h3>
+                <div class="price-container">
+                    <span class="price-old">R$ 14,00</span>
+                    <span class="price-green">R$ 7,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+
+            <div class="card" onclick="openModal(8)">
+                <img onerror="this.src='https://placehold.co/300x300/1a1a22/fff?text=Produto+8'" src="images/"/>
+                <h3>Blip de Loja de Roupa</h3>
+                <div class="price-container">
+                    <span class="price-old">R$ 16,00</span>
+                    <span class="price-green">R$ 8,00</span>
+                </div>
+                <button class="add-to-cart-btn">COMPRAR AGORA</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div class="modal" id="m1">
+    <div class="box">
+        <span class="close" onclick="closeModal(1)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+1'" src="images/cadeado.jpg"/>
+        <div>
+            <h2>Sistema de Trancas</h2>
+            <p>Tenha total controle sobre o acesso ao seu local com um sistema completo e personalizado.</p>
+            <p><strong>Recursos:</strong></p>
+            <ul class="modal-list">
+                <li>🔒 Até 7 trancas configuráveis por propriedade.</li>
+                <li>👥 Vincule as trancas à sua Facção, Corporação ou para uso pessoal.</li>
+                <li>⚙️ Controle de acesso rápido, seguro e totalmente configurável.</li>
+            </ul>
+            <p><strong>Mais organização, segurança e praticidade para proteger o que é seu.</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 5,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m2">
+    <div class="box">
+        <span class="close" onclick="closeModal(2)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+2'" src="images/camera.jpg"/>
+        <div>
+            <h2>Sistema de Câmeras</h2>
+            <p>Monitore sua propriedade em tempo integral com um sistema inteligente de vigilância.</p>
+            <p><strong>Recursos:</strong></p>
+            <ul class="modal-list">
+                <li>📷 Instale 1 câmera de segurança na posição que desejar.</li>
+                <li>👤 Sempre que alguém passar próximo à câmera, uma foto é capturada automaticamente.</li>
+                <li>📱 A imagem é enviada diretamente para o celular do proprietário dentro do jogo.</li>
+            </ul>
+            <p><strong>Tenha mais controle, segurança e fique sempre informado sobre quem circula pela sua propriedade.</strong></p>
+            <div class="price-container">
+                <span class="price-old">R$ 25,00</span><span class="price-green">R$ 15,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m3">
+    <div class="box">
+        <span class="close" onclick="closeModal(3)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Mansao'" src="images/mansão"/>
+        <div>
+            <h2>Mansão Exclusiva</h2>
+            <p>Escolha uma das mansões disponíveis para compra espalhadas pelo mapa e desfrute de uma experiência exclusiva com benefícios únicos dentro da <strong>Nova Capital</strong>.</p>
+            <p><strong>Ao adquirir sua mansão, você terá:</strong></p>
+            <ul class="modal-list">
+                <li>📹 Sistema de Câmeras de Segurança</li>
+                <li>🔐 Sistema de Trancas para controle de acesso</li>
+                <li>🚗 Garagem exclusiva para carros e motos</li>
+                <li>🚁 Garagem para helicópteros</li>
+                <li>💬 Cargo exclusivo de Proprietário de Mansão no Discord oficial da cidade.</li>
+            </ul>
+            <p><strong>Garanta sua mansão, tenha mais segurança, praticidade e exclusividade dentro da Nova Capital.</strong></p>
+            <div class="price-container">
+                <span class="price-old">R$ 450,00</span><span class="price-green">R$ 150,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m4">
+    <div class="box">
+        <span class="close" onclick="closeModal(4)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+4'" src="images/garagem"/>
+        <div>
+            <h2>Blip de Garagem</h2>
+            <p>Tenha uma garagem personalizada para guardar e retirar seus veículos com total praticidade.</p>
+            <p><strong>Recursos:</strong></p>
+            <ul class="modal-list">
+                <li>🚘 Guarde e retire carros, motos, caminhões e outros veículos terrestres.</li>
+                <li>📍 Escolha o local do blip da garagem de acordo com sua preferência.</li>
+                <li>🚙 Defina exatamente onde os veículos serão spawnados ao serem retirados.</li>
+                <li>⚙️ Sistema totalmente personalizado para se adaptar à sua propriedade.</li>
+            </ul>
+            <p><strong>Mais liberdade, organização e praticidade para acessar seus veículos sempre que precisar.</strong></p>
+            <div class="price-container">
+                <span class="price-old">R$ 15,00</span><span class="price-green">R$ 8,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m5">
+    <div class="box">
+        <span class="close" onclick="closeModal(5)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+5'" src="images/helico"/>
+        <div>
+            <h2>Blip de Helicópteros</h2>
+            <p>Tenha um blip de helicóptero para armazenar e acessar suas aeronaves com total praticidade.</p>
+            <p><strong>Recursos:</strong></p>
+            <ul class="modal-list">
+                <li>🚁 Guarde e retire helicópteros diretamente da sua propriedade.</li>
+                <li>📍 Escolha o local do blip do heliponto onde desejar.</li>
+                <li>🛬 Defina exatamente o ponto de spawn da aeronave ao ser retirada.</li>
+                <li>⚙️ Sistema totalmente personalizado para se adaptar ao espaço da sua propriedade.</li>
+            </ul>
+            <p><strong>Mais liberdade, organização e acesso rápido às suas aeronaves sempre que precisar.</strong></p>
+            <div class="price-container">
+                <span class="price-old">R$ 20,00</span><span class="price-green">R$ 10,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m6">
+    <div class="box">
+        <span class="close" onclick="closeModal(6)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+6'" src="images/cofre"/>
+        <div>
+            <h2>Sistema de Cofre</h2>
+            <p>Armazene seus itens com segurança em um cofre totalmente personalizável para uso individual ou coletivo.</p>
+            <p><strong>Recursos:</strong></p>
+            <ul class="modal-list">
+                <li>🔒 Instale o cofre em mansões, sedes de facções, corporações ou qualquer propriedade compatível.</li>
+                <li>👤 Configure para uso pessoal ou compartilhado com um group.</li>
+                <li>📦 Armazene seus itens com praticidade e segurança.</li>
+            </ul>
+            <p><strong>Ideal para proteger seus bens e manter tudo organizado, seja para você ou para sua equipe.</strong></p>
+            <div class="price-container">
+                <span class="price-green">R$ 15,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m7">
+    <div class="box">
+        <span class="close" onclick="closeModal(7)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+7'" src="images/barbearia"/>
+        <div>
+            <h2>Blip de Barbearia</h2>
+            <p>Adicione um blip de acesso à barbearia em qualquer local do mapa.</p>
+            <p><strong>Recursos:</strong></p>
+            <ul class="modal-list">
+                <li>💈 Escolha onde o blip será localizado.</li>
+                <li>✂️ Acesso rápido ao sistema de cortes de cabelo, barba e personalização.</li>
+                <li>⚙️ Configuração totalmente adaptável ao seu projeto ou propriedade.</li>
+            </ul>
+            <p><strong>Mais praticidade e exclusividade.</strong></p>
+            <div class="price-container">
+                <span class="price-old">R$ 14,00</span><span class="price-green">R$ 7,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m8">
+    <div class="box">
+        <span class="close" onclick="closeModal(8)">×</span>
+        <img onerror="this.src='https://placehold.co/500x500/121216/fff?text=Produto+8'" src="images/Loja de Roupa"/>
+        <div>
+            <h2>Blip de Loja de Roupa</h2>
+            <p>Adicione um blip de acesso à loja de roupas em qualquer local do mapa.</p>
+            <p><strong>Recursos:</strong></p>
+            <ul class="modal-list">
+                <li>📍 Escolha onde o blip será localizado.</li>
+                <li>👕 Acesse o sistema completo de roupas e acessórios.</li>
+                <li>⚙️ Pode ser instalado em mansões, facções, corporações, empresas ou qualquer propriedade compatível.</li>
+            </ul>
+            <p><strong>Leve a personalização de roupas para o local que você desejar, com total liberdade de configuração.</strong></p>
+            <div class="price-container">
+                <span class="price-old">R$ 16,00</span><span class="price-green">R$ 8,00</span>
+            </div>
+            <button class="buy-btn" onclick="window.open('https://discord.com/channels/1463693154367701257/1525528584209567965', '_blank')">COMPRAR AGORA</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
